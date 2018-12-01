@@ -543,7 +543,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #222;
+    -webkit-tap-highlight-color: #222;
 }
 
 .top-header {
@@ -551,7 +551,7 @@ body {
     box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.5);
     position: fixed;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -595,7 +595,7 @@ body {
 
 .social-link-list-wrapper {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
