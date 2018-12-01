@@ -617,7 +617,11 @@ body {
     color: #fff;
 }
 
-
 .social-link .fa {
     margin-bottom: 5px;
+}
+
+footer {
+    padding: 17px;
+    text-align: center;
 }
