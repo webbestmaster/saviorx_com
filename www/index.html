@@ -574,6 +574,117 @@
 </header>
 -->
 
+<aside>
+    <div class="container text-center">
+
+        <div class="press-kit__slider">
+
+            <style>
+                .press-kit__slider {
+                    display: block;
+                    padding-bottom: 30px;
+                }
+
+                .press-kit__slider .swiper-container {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .press-kit__slider .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 80px;
+                }
+
+                .press-kit__slider .swiper-pagination-bullet {
+                    background-color: #fff;
+                    opacity: 0.5;
+                }
+
+                .press-kit__slider .swiper-pagination-bullet-active {
+                    background-color: #fff;
+                    opacity: 1;
+                }
+
+                .press-kit__slider .swiper-button-prev {
+                    background-image: url('img/slider/arrow-gray-left.svg');
+                }
+
+                .press-kit__slider .swiper-button-next {
+                    background-image: url('img/slider/arrow-gray-right.svg');
+                }
+
+                .press-kit__slider .swiper-wrapper {
+                    width: auto;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            </style>
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a target="_blank" class="press-kit__slide-link" href="https://www.vz.lt/laisvalaikis/pomegiai/2015/11/23/vzdizaineriui--tarptautinis-apdovanojimas-uz-zaidimo-dizaina">
+                            <img class="press-kit__slide-image" src="img/media/www_vz_lt.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a target="_blank" class="press-kit__slide-link" href="http://la.by/news/devgamm-2015-v-minske-den-vtoroy">
+                            <img class="press-kit__slide-image" src="img/media/www_la_by.png">
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!--<div class="swiper-pagination"></div>-->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.press-kit__slider .swiper-container', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    // loop: true,
+                    // centeredSlides: true,
+                    // autoplay: {
+                    //     delay: 2500,
+                    //     disableOnInteraction: false,
+                    // },
+                    pagination: {
+                        el: '.press-kit__slider .swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.press-kit__slider .swiper-button-next',
+                        prevEl: '.press-kit__slider .swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
+
+        <div class="press-kit__link-block"></div>
+
+    </div>
+</aside>
+
 <section id="why">
     <div class="container">
 
