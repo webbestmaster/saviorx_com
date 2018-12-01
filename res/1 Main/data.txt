@@ -1,6 +1,6 @@
 хедер как тут, только без гамбургера - https://flo.health/
 
-Title links: - это лини в хедере
+Title links: - это линки в хедере
 - Home
 - Press Kit - это ссылка на дрод бокс (пока самой ссылки нет)
 
@@ -17,6 +17,6 @@ Text on the left side :
 	SaviorX
 Kerbal space meets machinarium
 
-In SaviorX you will explore the absolute beauty of the cosmos while building complex rocket systems to fly over the universe with a mission to rescue life. Our game is an ultimate guide though a stunningly beautiful world that attracts the imagination of the humankind since the time being. 
+In SaviorX you will explore the absolute beauty of the cosmos while building complex rocket systems to fly over the universe with a mission to rescue life. Our game is an ultimate guide though a stunningly beautiful world that attracts the imagination of the humankind since the time being.
 
 
