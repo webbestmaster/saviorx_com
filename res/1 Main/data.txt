@@ -8,9 +8,7 @@ Title links: - это линки в хедере
 Social links: - прибить в левую сторону, и убрать в центре в низу блока
 1. FB - https://www.facebook.com/SaviorXMobile
 2. Instagram - https://www.instagram.com/saviorxgame
-3. Yutube https://www.youtube.com/channel/UCzKLa21iiKABxsGPjP0JaIQ
-
-
+3. Yutube - https://www.youtube.com/channel/UCzKLa21iiKABxsGPjP0JaIQ
 
 -- поменять на новый текст
 Text on the left side :

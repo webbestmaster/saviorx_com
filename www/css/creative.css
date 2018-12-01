@@ -567,7 +567,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 16px;
 }
 
 .top-header__navigation-link {
@@ -591,4 +591,33 @@ body {
 .top-header__store-badge {
     width: 100%;
     display: block;
+}
+
+.social-link-list-wrapper {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+}
+
+.social-link {
+    color: #fff;
+    display: block;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.social-link:hover,
+.social-link:visited,
+.social-link:active {
+    opacity: 0.7;
+    color: #fff;
+}
+
+
+.social-link .fa {
+    margin-bottom: 5px;
 }
