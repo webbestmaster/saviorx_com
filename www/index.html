@@ -147,6 +147,7 @@
             width: 100%;
             height: 100%;
         }
+
         .screen-shot-slider .swiper-slide {
             text-align: center;
             font-size: 18px;
@@ -256,15 +257,211 @@
 <aside class="bg-black">
     <div class="container text-center">
         <div class="call-to-action">
-            <iframe width="100%" height="720"
-                    src="https://www.youtube.com/embed/79RFbpwdvRU?rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0"
-                    allowfullscreen></iframe>
-            <iframe width="33%" height="315" src="https://www.youtube.com/embed/qoTwIdJGOKQ?rel=0&amp;cc_load_policy=1"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <iframe width="33%" height="315" src="https://www.youtube.com/embed/fjaUi7maXPQ?rel=0&amp;cc_load_policy=1"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <iframe width="33%" height="315" src="https://www.youtube.com/embed/x_hp62TD9Vg?rel=0&amp;cc_load_policy=1"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+            <div class="big-video-slider">
+
+                <style>
+                    .big-video-slider {
+                        display: block;
+                        background-color: #000;
+                        padding-bottom: 30px;
+                    }
+
+                    .big-video-slider .swiper-container {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .big-video-slider .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                    }
+
+                    .big-video-slider .swiper-pagination-bullet {
+                        background-color: #fff;
+                        opacity: 0.5;
+                    }
+
+                    .big-video-slider .swiper-pagination-bullet-active {
+                        background-color: #fff;
+                        opacity: 1;
+                    }
+
+                    .big-video-slider .swiper-button-prev {
+                        background-image: url('img/slider/arrow-left.svg');
+                    }
+
+                    .big-video-slider .swiper-button-next {
+                        background-image: url('img/slider/arrow-right.svg');
+                    }
+
+                    .big-video-slider .swiper-slide:nth-child(n) {
+                        /*width: 80%;*/
+                    }
+                </style>
+
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe width="100%" height="720"
+                                    src="https://www.youtube.com/embed/79RFbpwdvRU?rel=0&amp;showinfo=0&amp;autohide=1"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.big-video-slider .swiper-container', {
+                        slidesPerView: 'auto',
+                        spaceBetween: 30,
+                        loop: true,
+                        centeredSlides: true,
+                        // autoplay: {
+                        //     delay: 2500,
+                        //     disableOnInteraction: false,
+                        // },
+                        pagination: {
+                            el: '.big-video-slider .swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.big-video-slider .swiper-button-next',
+                            prevEl: '.big-video-slider .swiper-button-prev',
+                        },
+                    });
+                </script>
+            </div>
+
+
+            <div class="small-video-slider">
+                <style>
+                    .small-video-slider {
+                        display: block;
+                        background-color: #000;
+                    }
+
+                    .small-video-slider .swiper-container {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .small-video-slider .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        width: 376px;
+                        height: 315px;
+                    }
+
+                    .small-video-slider .swiper-pagination-bullet {
+                        background-color: #fff;
+                        opacity: 0.5;
+                    }
+
+                    .small-video-slider .swiper-pagination-bullet-active {
+                        background-color: #fff;
+                        opacity: 1;
+                    }
+
+                    .small-video-slider .swiper-button-prev {
+                        background-image: url('img/slider/arrow-left.svg');
+                    }
+
+                    .small-video-slider .swiper-button-next {
+                        background-image: url('img/slider/arrow-right.svg');
+                    }
+
+                    .small-video-slider .swiper-slide:nth-child(n) {
+                        width: 376px;
+                        height: 315px;
+                    }
+                </style>
+
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe width="376" height="315"
+                                    src="https://www.youtube.com/embed/qoTwIdJGOKQ?rel=0&amp;cc_load_policy=1"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe width="376" height="315"
+                                    src="https://www.youtube.com/embed/fjaUi7maXPQ?rel=0&amp;cc_load_policy=1"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe width="376" height="315"
+                                    src="https://www.youtube.com/embed/x_hp62TD9Vg?rel=0&amp;cc_load_policy=1"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Initialize Swiper -->
+                </div>
+
+                <script>
+                    var swiper = new Swiper('.small-video-slider .swiper-container', {
+                        slidesPerView: 'auto',
+                        spaceBetween: 30,
+                        loop: true,
+                        centeredSlides: true,
+                        // autoplay: {
+                        //     delay: 2500,
+                        //     disableOnInteraction: false,
+                        // },
+                        pagination: {
+                            el: '.small-video-slider .swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.small-video-slider .swiper-button-next',
+                            prevEl: '.small-video-slider .swiper-button-prev',
+                        },
+                    });
+                </script>
+            </div>
+
         </div>
     </div>
 </aside>
