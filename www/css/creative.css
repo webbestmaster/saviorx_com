@@ -665,3 +665,19 @@ footer {
     font-size: 20px;
     padding-top: 47px;
 }
+
+.press-kit__link-block__header {
+    display: block;
+}
+
+.press-kit__nav-link-block {
+    display: block;
+}
+
+.press-kit__nav-link {
+    display: block;
+}
+
+.press-kit__download-link {
+    display: block;
+}
