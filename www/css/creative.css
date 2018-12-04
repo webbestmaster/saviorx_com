@@ -634,6 +634,7 @@ footer {
     position: relative;
     box-sizing: border-box;
     padding: 41px 64px 30px;
+    border-radius: 4px;
 }
 
 .press-kit__slide-link {
@@ -700,12 +701,28 @@ footer {
     margin-right: 20px;
 }
 
+.press-kit__download-link:hover,
+.press-kit__download-link:active,
+.press-kit__download-link:visited,
 .press-kit__download-link {
     display: block;
     background-image: url(../img/media/download-kit-icon.png);
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    background-position: 0 0;
+    background-position: 33px 14px;
     text-decoration: none;
-    float: right;
+    position: absolute;
+    border: 2px solid #fff;
+    right: 61px;
+    top: 54px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 35px 10px 66px;
+    letter-spacing: 0.7px;
+    color: #fff;
+}
+
+.press-kit__download-link:hover {
+    text-decoration: underline;
+    opacity: 0.75;
 }
